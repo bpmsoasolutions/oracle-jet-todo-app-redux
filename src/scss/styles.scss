@@ -1,3 +1,7 @@
 @import './_general.scss';
 @import './_buttons.scss';
 @import './_page.scss';
+
+@import '../components/todo/todo.scss';
+@import '../containers/todo-list/todo-list.scss';
+@import '../containers/filter-list/filter-list.scss';
