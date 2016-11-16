@@ -1,0 +1,12 @@
+<div class="todo-list" >
+    <ul data-bind="foreach: { data: todos, as: 'todo' }">
+        <!-- ko with:$parent -->
+        <todo class="todo" params="todo:todo,handleClick:handleTodoClick,handleRemove:handleTodoRemove"></todo>
+        <!-- /ko -->
+    </ul>
+    <!-- ko if: (todos().length === 0) -->
+    <center>
+        <h4>No todos, well done!</h4>
+    </center>
+    <!-- /ko -->
+</div>

@@ -1,0 +1,14 @@
+<div class="filter-list">
+    <div class="oj-flex-bar">
+        <div class="oj-flex-bar-start">
+            <label class="oj-label-inline" id="filters">Show:</label>
+        </div>
+        <div class="oj-flex-bar-middle">
+             <ojk-radioset params="ariaLabelledby:'filters'">
+                <!-- ko component: { name: 'filter', params: {text:'All',name:'SHOW_ALL',handleClick:onFilterClick} } --><!-- /ko -->
+                <!-- ko component: { name: 'filter', params: {text:'Active',name:'SHOW_ACTIVE',handleClick:onFilterClick} } --><!-- /ko -->
+                <!-- ko component: { name: 'filter', params: {text:'Completed',name:'SHOW_COMPLETED',handleClick:onFilterClick} } --><!-- /ko -->
+            </ojk-radioset>
+        </div>
+    </div>
+</div>
