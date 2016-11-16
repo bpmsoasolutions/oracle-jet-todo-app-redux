@@ -2,13 +2,19 @@ import { combineReducers } from 'redux'
 
 import { routerReducer } from './router'
 
+
+import todos from './todos'
+import visibilityFilter from './visibilityFilter'
+
 const rootReducer = combineReducers({
+    todos,
+    visibilityFilter,
     router: routerReducer
 })
 
 export default rootReducer
 
-//Router Seletor
 export const getRouter = (state)=>state.router
 
-// This are the place that knows where the specific reducers are conected in your global state
+export const getTodos = (state) => state.todos
+export const getVisibilityFilter = (state) => state.visibilityFilter
