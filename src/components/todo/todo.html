@@ -1,0 +1,7 @@
+<li class="todo"data-bind="css:{ completed: completed}, click: onClick">
+    <i class="toggle"></i>
+    <label data-bind="text: text"></label>
+    <!-- ko if: completed -->
+    <ojk-button params="label: 'X',rootAttributes: {class:'oj-button-delete delete'},click: onRemoveClick"></ojk-button>
+    <!-- /ko -->
+</li>
